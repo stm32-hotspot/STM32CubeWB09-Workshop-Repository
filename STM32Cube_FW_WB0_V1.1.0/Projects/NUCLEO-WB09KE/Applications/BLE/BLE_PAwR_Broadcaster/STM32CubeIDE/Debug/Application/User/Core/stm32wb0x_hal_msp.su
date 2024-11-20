@@ -1,0 +1,17 @@
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:229:22:LL_AHB1_GRP1_EnableClock	24	static
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:279:22:LL_AHB1_GRP1_DisableClock	16	static
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:504:22:LL_APB1_GRP1_EnableClock	24	static
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:566:22:LL_APB1_GRP1_DisableClock	16	static
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:642:22:LL_APB2_GRP1_EnableClock	24	static
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:659:26:LL_APB2_GRP1_IsEnabledClock	16	static
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:672:22:LL_APB2_GRP1_DisableClock	16	static
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:685:22:LL_APB2_GRP1_ForceReset	16	static
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:698:22:LL_APB2_GRP1_ReleaseReset	16	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/Core/Src/stm32wb0x_hal_msp.c:63:6:HAL_MspInit	8	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/Core/Src/stm32wb0x_hal_msp.c:83:6:HAL_PKA_MspInit	16	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/Core/Src/stm32wb0x_hal_msp.c:109:6:HAL_PKA_MspDeInit	16	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/Core/Src/stm32wb0x_hal_msp.c:134:6:HAL_RADIO_MspInit	48	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/Core/Src/stm32wb0x_hal_msp.c:187:6:HAL_RADIO_MspDeInit	16	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/Core/Src/stm32wb0x_hal_msp.c:215:6:HAL_UART_MspInit	48	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/Core/Src/stm32wb0x_hal_msp.c:263:6:HAL_UART_MspDeInit	16	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/Core/Src/stm32wb0x_hal_msp.c:297:13:lowPowerIOSetup	8	static

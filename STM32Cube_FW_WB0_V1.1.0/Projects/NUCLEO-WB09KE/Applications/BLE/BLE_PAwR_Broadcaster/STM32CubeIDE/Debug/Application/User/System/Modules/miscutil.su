@@ -1,0 +1,10 @@
+../../../../../../../Drivers/CMSIS/Include/core_cm0plus.h:987:34:__NVIC_SystemReset	8	static,ignoring_inline_asm
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_system.h:365:26:LL_SYSCFG_GetDeviceRevision	8	static
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_system.h:375:26:LL_SYSCFG_GetDeviceVersion	8	static
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_system.h:385:26:LL_SYSCFG_GetDeviceJTAG_ID	8	static
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_utils.h:191:26:LL_GetFlashSize	8	static
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_utils.h:204:28:LL_GetRAMSize	16	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/System/Modules/miscutil.c:46:6:GetPartInfo	24	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/System/Modules/miscutil.c:90:6:GetCrashInfo	24	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/System/Modules/miscutil.c:96:6:CrashHandler	32	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/System/Modules/miscutil.c:117:9:GetDemodCI	16	static

@@ -1,0 +1,9 @@
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Middlewares/ST/STM32_BLE/queued_writes/src/eatt_pwrq.c:110:6:EATT_pwrq_reset	1
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Middlewares/ST/STM32_BLE/queued_writes/src/eatt_pwrq.c:115:12:EATT_pwrq_init	1
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Middlewares/ST/STM32_BLE/queued_writes/src/eatt_pwrq.c:129:6:EATT_pwrq_flush	2
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Middlewares/ST/STM32_BLE/queued_writes/src/eatt_pwrq.c:149:12:EATT_pwrq_read	2
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Middlewares/ST/STM32_BLE/queued_writes/src/eatt_pwrq.c:169:12:EATT_pwrq_pop	4
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Middlewares/ST/STM32_BLE/queued_writes/src/eatt_pwrq.c:206:12:EATT_pwrq_push	3
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Middlewares/ST/STM32_BLE/queued_writes/src/eatt_pwrq.c:263:19:EATT_pwrq_get_entry	7
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Middlewares/ST/STM32_BLE/queued_writes/src/eatt_pwrq.c:306:13:EATT_pwrq_cp32align_blk_left_move	2
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Middlewares/ST/STM32_BLE/queued_writes/src/eatt_pwrq.c:320:13:EATT_pwrq_rm_entry	1

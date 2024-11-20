@@ -1,0 +1,10 @@
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:642:22:LL_APB2_GRP1_EnableClock	1
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:659:26:LL_APB2_GRP1_IsEnabledClock	2
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:685:22:LL_APB2_GRP1_ForceReset	1
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:698:22:LL_APB2_GRP1_ReleaseReset	1
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/System/Interfaces/hw_aes.c:71:21:HW_AES_Init	2
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/System/Interfaces/hw_aes.c:85:21:HW_AES_Deinit	1
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/System/Interfaces/hw_aes.c:90:21:HW_AES_Encrypt	2
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/System/Interfaces/hw_aes.c:134:25:HW_AES_Start	3
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/System/Interfaces/hw_aes.c:166:22:LL_AES_StartManualEncription	1
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/System/Interfaces/hw_aes.c:177:26:LL_AES_IsBusy	2

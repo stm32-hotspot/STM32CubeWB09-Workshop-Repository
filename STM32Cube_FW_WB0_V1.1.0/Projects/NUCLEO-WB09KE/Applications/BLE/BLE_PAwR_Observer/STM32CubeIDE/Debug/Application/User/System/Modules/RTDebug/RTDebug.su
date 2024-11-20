@@ -1,0 +1,3 @@
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/System/Modules/RTDebug/RTDebug.c:36:6:SYSTEM_DEBUG_SIGNAL_SET	16	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/System/Modules/RTDebug/RTDebug.c:43:6:SYSTEM_DEBUG_SIGNAL_RESET	16	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/System/Modules/RTDebug/RTDebug.c:50:6:SYSTEM_DEBUG_SIGNAL_TOGGLE	16	static

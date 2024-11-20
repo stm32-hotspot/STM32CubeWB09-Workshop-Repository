@@ -1,0 +1,5 @@
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/System/Modules/Flash/flash_manager.c:110:17:FM_Write	7
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/System/Modules/Flash/flash_manager.c:150:17:FM_Erase	5
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/System/Modules/Flash/flash_manager.c:186:6:FM_BackgroundProcess	23
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/System/Modules/Flash/flash_manager.c:307:24:FM_CheckFlashManagerState	9
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/System/Modules/Flash/flash_manager.c:384:13:FM_ProcessRequest	1

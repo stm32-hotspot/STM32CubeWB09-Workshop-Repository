@@ -1,0 +1,17 @@
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:229:22:LL_AHB1_GRP1_EnableClock	1
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:279:22:LL_AHB1_GRP1_DisableClock	1
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:504:22:LL_APB1_GRP1_EnableClock	1
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:566:22:LL_APB1_GRP1_DisableClock	1
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:642:22:LL_APB2_GRP1_EnableClock	1
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:659:26:LL_APB2_GRP1_IsEnabledClock	2
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:672:22:LL_APB2_GRP1_DisableClock	1
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:685:22:LL_APB2_GRP1_ForceReset	1
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:698:22:LL_APB2_GRP1_ReleaseReset	1
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/Core/Src/stm32wb0x_hal_msp.c:63:6:HAL_MspInit	1
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/Core/Src/stm32wb0x_hal_msp.c:84:6:HAL_PKA_MspInit	2
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/Core/Src/stm32wb0x_hal_msp.c:110:6:HAL_PKA_MspDeInit	2
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/Core/Src/stm32wb0x_hal_msp.c:135:6:HAL_RADIO_MspInit	4
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/Core/Src/stm32wb0x_hal_msp.c:188:6:HAL_RADIO_MspDeInit	2
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/Core/Src/stm32wb0x_hal_msp.c:216:6:HAL_UART_MspInit	2
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/Core/Src/stm32wb0x_hal_msp.c:264:6:HAL_UART_MspDeInit	2
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/Core/Src/stm32wb0x_hal_msp.c:298:13:lowPowerIOSetup	1

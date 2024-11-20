@@ -1,0 +1,9 @@
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash.c:145:19:HAL_FLASH_Program	4
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash.c:205:19:HAL_FLASH_Program_IT	4
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash.c:265:6:HAL_FLASH_IRQHandler	8
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash.c:365:13:HAL_FLASH_EndOfOperationCallback	1
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash.c:383:13:HAL_FLASH_OperationErrorCallback	1
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash.c:418:10:HAL_FLASH_GetError	1
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash.c:442:19:FLASH_WaitForLastOperation	5
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash.c:480:13:FLASH_Program_Word	1
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash.c:502:13:FLASH_Program_Burst	1

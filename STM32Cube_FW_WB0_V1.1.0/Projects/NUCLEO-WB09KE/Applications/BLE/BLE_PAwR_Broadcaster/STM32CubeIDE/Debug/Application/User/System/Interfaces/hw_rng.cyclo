@@ -1,0 +1,13 @@
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_bus.h:229:22:LL_AHB1_GRP1_EnableClock	1
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_rng.h:576:22:LL_RNG_Enable	1
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_rng.h:587:22:LL_RNG_Disable	1
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_rng.h:664:22:LL_RNG_SetSamplingClockEnableDivider	1
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_rng.h:675:26:LL_RNG_GetSamplingClockEnableDivider	1
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_rng.h:690:26:LL_RNG_IsActiveFlag_DISABLED	2
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_rng.h:718:26:LL_RNG_IsActiveFlag_REVEAL_CLK_ERR	2
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_rng.h:749:26:LL_RNG_IsActiveFlag_VAL_READY	2
+../../../../../../../Drivers/STM32WB0x_HAL_Driver/Inc/stm32wb0x_ll_rng.h:849:26:LL_RNG_GetRndVal	1
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/System/Interfaces/hw_rng.c:62:21:HW_RNG_Init	4
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/System/Interfaces/hw_rng.c:113:21:HW_RNG_Deinit	1
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/System/Interfaces/hw_rng.c:125:21:HW_RNG_GetRandom16	2
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/System/Interfaces/hw_rng.c:152:21:HW_RNG_GetRandom32	2

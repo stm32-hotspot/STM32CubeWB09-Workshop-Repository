@@ -1,0 +1,11 @@
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/STM32_BLE/App/esl_profile_ap.c:47:6:ESL_AP_Init	16	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/STM32_BLE/App/esl_profile_ap.c:55:9:ESL_AP_cmd_ping	24	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/STM32_BLE/App/esl_profile_ap.c:94:15:prepare_cmd_buff	32	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/STM32_BLE/App/esl_profile_ap.c:128:9:ESL_AP_cmd_led_control	32	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/STM32_BLE/App/esl_profile_ap.c:162:9:ESL_AP_cmd_txt	56	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/STM32_BLE/App/esl_profile_ap.c:181:9:ESL_AP_cmd_price	32	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/STM32_BLE/App/esl_profile_ap.c:197:9:ESL_AP_cmd_read_sensor_data	32	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/STM32_BLE/App/esl_profile_ap.c:212:9:ESL_AP_cmd_display_image	32	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/STM32_BLE/App/esl_profile_ap.c:228:6:ESL_AP_SubeventDataRequest	104	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/STM32_BLE/App/esl_profile_ap.c:330:6:ESL_AP_ResponseReport	56	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Broadcaster/STM32_BLE/App/esl_profile_ap.c:390:9:get_esl_id_from_response	40	static

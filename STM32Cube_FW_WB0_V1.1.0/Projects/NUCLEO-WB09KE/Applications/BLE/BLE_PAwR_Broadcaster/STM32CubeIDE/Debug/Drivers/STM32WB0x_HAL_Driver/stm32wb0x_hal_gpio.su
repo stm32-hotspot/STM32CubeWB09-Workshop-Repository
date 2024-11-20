@@ -1,0 +1,9 @@
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_gpio.c:169:6:HAL_GPIO_Init	32	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_gpio.c:326:6:HAL_GPIO_DeInit	32	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_gpio.c:438:15:HAL_GPIO_ReadPin	24	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_gpio.c:470:6:HAL_GPIO_WritePin	16	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_gpio.c:500:6:HAL_GPIO_WriteMultipleStatePin	24	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_gpio.c:519:6:HAL_GPIO_TogglePin	24	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_gpio.c:544:19:HAL_GPIO_LockPin	24	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_gpio.c:580:6:HAL_GPIO_EXTI_IRQHandler	16	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_gpio.c:596:13:HAL_GPIO_EXTI_Callback	16	static

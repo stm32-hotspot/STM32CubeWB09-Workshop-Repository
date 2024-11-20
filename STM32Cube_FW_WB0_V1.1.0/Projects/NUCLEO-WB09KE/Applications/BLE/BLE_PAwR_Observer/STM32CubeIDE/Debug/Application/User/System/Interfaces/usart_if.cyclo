@@ -1,0 +1,4 @@
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/System/Interfaces/usart_if.c:120:25:UART_Init	1
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/System/Interfaces/usart_if.c:152:25:UART_DeInit	1
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/System/Interfaces/usart_if.c:214:25:UART_StartRx	1
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/System/Interfaces/usart_if.c:243:25:UART_TransmitDMA	1

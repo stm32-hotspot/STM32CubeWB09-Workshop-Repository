@@ -1,0 +1,9 @@
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/System/Modules/Profiles/Src/gap_profile.c:145:12:aci_gap_profile_init	48	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/System/Modules/Profiles/Src/gap_profile.c:212:12:Gap_profile_set_dev_name	32	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/System/Modules/Profiles/Src/gap_profile.c:221:12:Gap_profile_set_appearance	32	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/System/Modules/Profiles/Src/gap_profile.c:230:12:Gap_profile_set_pref_conn_par	32	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/System/Modules/Profiles/Src/gap_profile.c:239:12:Gap_profile_set_char_value	40	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/System/Modules/Profiles/Src/gap_profile.c:288:12:Gap_profile_set_access_permission	32	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/System/Modules/Profiles/Src/gap_profile.c:321:12:Gap_profile_set_security_permission	32	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/System/Modules/Profiles/Src/gap_profile.c:395:10:Gap_profile_get_service_handle	8	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Projects/NUCLEO-WB09KE/Applications/BLE/BLE_PAwR_Observer/System/Modules/Profiles/Src/gap_profile.c:400:21:Gap_profile_get_service_definition_p	8	static

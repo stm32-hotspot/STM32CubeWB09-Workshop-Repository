@@ -1,0 +1,14 @@
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash_ex.c:110:19:HAL_FLASHEx_Erase	32	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash_ex.c:168:19:HAL_FLASHEx_Erase_IT	32	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash_ex.c:226:19:HAL_FLASHEx_OTPWrite	32	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash_ex.c:260:19:HAL_FLASHEx_OTPWrite_IT	16	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash_ex.c:297:19:HAL_FLASHEx_PageProtection	16	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash_ex.c:358:19:HAL_FLASHEx_Protection_Config	32	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash_ex.c:403:10:HAL_FLASHEx_GetProtection_Level	16	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash_ex.c:431:19:HAL_FLASHEx_MassRead	16	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash_ex.c:465:19:HAL_FLASHEx_LFSRSignature	32	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash_ex.c:516:13:FLASH_MassErase	8	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash_ex.c:531:6:FLASH_PageErase	16	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash_ex.c:549:13:FLASH_MassRead	8	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash_ex.c:564:13:FLASH_Program_OTPWord	24	static
+C:/WB0/STM32Cube_FW_WB0_V1.1.0/Drivers/STM32WB0x_HAL_Driver/Src/stm32wb0x_hal_flash_ex.c:588:13:FLASH_KeyWrite	8	static
