@@ -1,0 +1,306 @@
+
+STM32WB09 Code snippets to be added to Hands-on Labs - 12/2/24:
+
+
+==================================================================================================================
+Lab #1:  Getting started with STM32WB09 with STM32CubeMX
+==================================================================================================================
+
+In file “app_ble.c”, function “APP_BLE_Init”, tag “APP_BLE_Init_3” :
+
+ /* USER CODE BEGIN APP_BLE_Init_3 */
+
+  /* Start to Advertise to accept a connection */
+  APP_BLE_Procedure_Gap_Peripheral(PROC_GAP_PERIPH_ADVERTISE_START_FAST);
+
+  /* USER CODE END APP_BLE_Init_3 */
+
+
+
+
+In file “myserv_app.c”, struct “MYSERV_APP_Context_t”, tag “Service1_APP_Context_t” :
+
+  /* USER CODE BEGIN Service1_APP_Context_t */
+  uint8_t ButtonStatus;
+  /* USER CODE END Service1_APP_Context_t */
+  
+  
+  
+  
+In file “myserv_app.c”, function “MYSERV_Notification”, tag “Service1Char1_WRITE_NO_RESP_EVT” :
+
+      /* USER CODE BEGIN Service1Char1_WRITE_NO_RESP_EVT */
+    	if(p_Notification->DataTransfered.p_Payload[0] == 0x01)
+    	{
+    		BSP_LED_On(LED_BLUE);
+    		APP_DBG_MSG("-- EXAMPLE SERVER : LED1 ON\n");
+    	}
+    	if(p_Notification->DataTransfered.p_Payload[0] == 0x00)
+    	{
+    		BSP_LED_Off(LED_BLUE);
+    		APP_DBG_MSG("-- EXAMPLE SERVER : LED1 OFF\n");
+    	}
+      /* USER CODE END Service1Char1_WRITE_NO_RESP_EVT */
+
+
+
+In “myserv_app.c”, function “MYSERV_Switch_c_SendNotification”, tag “Service1Char2_NS_1” :
+
+/* USER CODE BEGIN Service1Char2_NS_1*/
+
+  //It's possible to implement a check wheter the notification is enabled on the peripheral side
+  notification_on_off = Switch_c_NOTIFICATION_ON;
+
+  if(MYSERV_APP_Context.ButtonStatus == 0x00)
+  {
+	  MYSERV_APP_Context.ButtonStatus = 0x01;
+  }
+  else
+  {
+	  MYSERV_APP_Context.ButtonStatus = 0x00;
+  }
+  a_MYSERV_UpdateCharData[0] = MYSERV_APP_Context.ButtonStatus;   /* Update notification data length */
+  myserv_notification_data.Length = (myserv_notification_data.Length) + 1;
+
+  /* USER CODE END Service1Char2_NS_1*/
+
+
+
+In “app_conf.h”, struct “CFG_Task_Id_t” :
+
+  /* USER CODE BEGIN CFG_Task_Id_t */
+  CFG_TASK_SEND_NOTIF_ID,
+  /* USER CODE END CFG_Task_Id_t */  
+
+
+
+In “myserv_app.c”, function “MYSERV_APP_Init”, tag “Service1_APP_Init” :
+
+  /* USER CODE BEGIN Service1_APP_Init */
+  UTIL_SEQ_RegTask( 1U << CFG_TASK_SEND_NOTIF_ID, UTIL_SEQ_RFU, MYSERV_Switch_c_SendNotification);
+  /* USER CODE END Service1_APP_Init */
+  
+  
+  
+In “app_entry .c”, tag “FD_LOCAL_FUNCTIONS” (or another source file, inside a user code tag) :
+
+/* USER CODE BEGIN FD_LOCAL_FUNCTIONS */
+void HAL_GPIO_EXTI_Callback(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
+{
+	//If interrupt comes from Button B1
+	if ((GPIOx == GPIOA) && (GPIO_Pin == B1_PIN)){
+		//Notify peripheral using BLE characteristic
+		UTIL_SEQ_SetTask( 1U << CFG_TASK_SEND_NOTIF_ID, CFG_SEQ_PRIO_0);
+	}
+}
+/* USER CODE END FD_LOCAL_FUNCTION
+
+
+==================================================================================================================
+Lab 2: Exploring Low Level Radio PHY Examples
+==================================================================================================================
+* line 134 modify sendData[1] */
+
+ sendData[1] = 0x08;   /* line 134, Length position is fixed */
+
+
+/* lines 139, 140, 141, 142 modify and add lines */
+ sendData[6] = 0xAA;  /* line 139 */
+ sendData[7] = 0xBB;  /* line 140 */
+ sendData[8] = 0xCC;  /* line 141 */
+ sendData[9] = (uint8_t)packet_counter;  /* line 142 */
+
+/* modify line 169 */
+
+ sendData[9] = (uint8_t)(++packet_counter);  /* line 169, modify array index to 9 */
+
+/* modify line 179 */
+
+ sendData[9] = 0;  /* line 179, modify array index to 9 */
+
+
+==================================================================================================================
+Lab 3: Developing with PAwR
+==================================================================================================================
+
+OBSERVER SOFTWARE CHANGES:
+
+1. app_ble.c
+/************************************/
+
+
++ uint8_t button_state = 0; /* Line 161 - Add a global variable to capture the state of button press */
+
++ void APPE_Button1Action(void)
+{    
+  if(bleAppContext.Device_Connection_Status == APP_BLE_IDLE || bleAppContext.Device_Connection_Status == APP_BLE_ADV_LP)
+  {
+     /* Relaunch fast advertising */
+    
+    if(bleAppContext.Device_Connection_Status == APP_BLE_IDLE)
+    {
+      watchdog_enable();
+    }
+    
+    APP_BLE_Procedure_Gap_Peripheral(PROC_GAP_PERIPH_ADVERTISE_STOP);    
+    APP_BLE_Procedure_Gap_Peripheral(PROC_GAP_PERIPH_ADVERTISE_START_FAST);
+  }
+
+/* Add the following modification to toggle button state */
+  button_state ^= 0x01;  /* Modified */
+  APP_DBG_MSG("Button State is: %d\n\r", button_state);
+
+  return;
+}
+/***********************************************/
+
+2. In  esl_profile.c
+
++  #define ESL_CMD_BUTTON							(0x01) /* Line 33 add the opcode for button command */
+
++ #define ESL_RESP_BUTTON_STATE					(0x11) /* Line 44 add the opcode for button response */
+
++ switch(opcode){
+/* In the synch_packet_received(), add the command to handle the data received from the Broadcaster node.  */
+case ESL_CMD_BUTTON:
+{
+   if(esl_cmd_id != BRC_ESL_ID)
+   {
+    	//TBR: to check if response exceeds ESL payload size.
+    	esl_payload_resp[resp_idx] = ESL_RESP_BUTTON_STATE;
+    	HOST_TO_LE_16(&esl_payload_resp[resp_idx + 1], button_state);
+    	resp_idx += GET_LENGTH_FROM_OPCODE(esl_payload_resp[resp_idx]);
+}
+/****************************************************************************************************************************/
+ 
+
+
+
+BROADCASTER SOFTWARE CHANGES:
+
+1. uart_cmd.c
+/************************************/
++ (Line 378)
++ else if(strncasecmp((char *)CommandString, "AT+BUTTON=", 10) == 0) /* Modified */
+{
+	  int ret;
+
+	  ret = sscanf((char*)CommandString + 10, "%2hhx,%2hhx", &group_id, &esl_id);
+	  if(ret != 2 || group_id >= MAX_GROUPS || esl_id == 0xFF)
+	  {
+		  return 1;
+	  }
+	  else
+	  {
+ /* ESL_AP_cmd_read_button_data creates a custom AT command to be sent to the node */
+		  if(ESL_AP_cmd_read_button_data(group_id, esl_id, button_resp_cb) == 0)
+		  {
+			  return 0;
+		  }
+		  else
+		  {
+			  return 1;
+		  }
+	  }
+  }
+
+  return 1;
+}
+
+
++ (Line 102)
+
++ /* Modified */
+static void button_resp_cb(uint8_t group_id, uint8_t esl_id, uint8_t *resp)
+{
+	uint8_t status = 0;
+	uint16_t button_state = 0;
+
+	print_esl_resp(group_id, esl_id, resp);
+
+	if(resp[0] == ESL_RESP_BUTTON_STATE) /* Check the response opcode for authentication */
+	{
+		button_state = LE_TO_HOST_16(&resp[1]);
+		/* Store the 2 bytes of button state response in a 16-bit var */
+	}
+	else
+	{
+		status = 1;
+	}
+
+	printf("+BUTTON:%02X,%02X,%d,%d\r\n", group_id, esl_id, status, button_state);
+}
+
+2. esl_profile_ap.c
+/************************************/
+
+(Line 212)
++ /* Modified */
+
+/* @brief: This function sends a command to read the button state from a node
+ *  @param: uint8_t, uint8_t, resp_cb_t
+ *  @return: uint8_t
+ *
+ */
+
+uint8_t ESL_AP_cmd_read_button_data(uint8_t group_id, uint8_t esl_id, resp_cb_t resp_cb)
+{
+	cmd_buff_t * cmd_buff; /* Malloc buffer metada */
+	uint8_t cmd_opcode = ESL_CMD_BUTTON; /* Command opcode determines the tx buffer length */
+	uint8_t cmd_length;
+
+	if(esl_id == BRC_ESL_ID)  /* Broadcast command cannot be sent if we expect a response */
+		return 1;
+
+	if(group_id >= MAX_GROUPS)
+		return 2;
+
+	cmd_length = GET_LENGTH_FROM_OPCODE(cmd_opcode); /* Packet length is determined */
+
+	cmd_buff = malloc(sizeof(cmd_buff_t)+cmd_length); /* Metadata + Tx buffer length is allocated */
+	/* As an alternative, please check the prepare_cmd_buff() function */
+	if(cmd_buff == NULL) /* NULL check for pointer */
+		return 1;
+
+	LST_insert_tail(&esl_group_info[group_id].cmd_queue, &cmd_buff->node); /* Tail inserted for LL */
+
+	//cmd_buff->sending = false;
+	cmd_buff->resp_cb = resp_cb; /* Button response callback */
+
+	/* Retransmissions for missed packets */
+	if(esl_id == BRC_ESL_ID)
+	{
+		cmd_buff->retransmissions = BRC_RETRANSMISSIONS;
+	}
+	else
+	{
+		cmd_buff->retransmissions = UNC_RETRANSMISSIONS;
+	}
+
+	cmd_buff->cmd[0] = cmd_opcode; /* Opcode for the Observer node to recognize the command */
+	cmd_buff->cmd[1] = esl_id;    /* ESL unique ID */
+
+	return 0; /* If successful */
+}
+
+3. In the esl_profile_ap.h
+
+(Line 85)
++ uint8_t ESL_AP_cmd_read_button_data(uint8_t group_id, uint8_t esl_id, resp_cb_t button_resp_cb); /* Modified to add the prototype */
+
+(Line 32)
++ #define ESL_CMD_BUTTON			        (0x01) /* Modified for button command */
+
+(Line 44)
++ #define ESL_RESP_BUTTON_STATE			(0x11) /* Modified for button response */ 
+
+
+
+==================================================================================================================
+Lab 4: Developing with CubeMonitorRF
+==================================================================================================================
+See Github script files (RF_Mod_Sweep.txt & CW_RF_Sweep.txt) for additional bonus material!
+
+
+
+
